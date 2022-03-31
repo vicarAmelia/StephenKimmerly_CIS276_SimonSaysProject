@@ -213,7 +213,8 @@ GameObject:
   - component: {fileID: 79024433}
   - component: {fileID: 79024435}
   - component: {fileID: 79024434}
-  m_Layer: 5
+  - component: {fileID: 79024436}
+  m_Layer: 3
   m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,6 +279,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79024432}
   m_CullTransparentMesh: 1
+--- !u!114 &79024436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79024432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a14aaa045205354ca5f2758debcb26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 79024432}
 --- !u!1 &82978644
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +303,7 @@ GameObject:
   - component: {fileID: 82978645}
   - component: {fileID: 82978647}
   - component: {fileID: 82978646}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ExitText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +384,7 @@ GameObject:
   - component: {fileID: 94504842}
   - component: {fileID: 94504841}
   - component: {fileID: 94504840}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +791,7 @@ GameObject:
   - component: {fileID: 270894114}
   - component: {fileID: 270894113}
   - component: {fileID: 270894112}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1163,7 +1177,7 @@ GameObject:
   - component: {fileID: 670718258}
   - component: {fileID: 670718257}
   - component: {fileID: 670718256}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1303,7 +1317,7 @@ GameObject:
   - component: {fileID: 720329196}
   - component: {fileID: 720329198}
   - component: {fileID: 720329197}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: MenuText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1728,7 +1742,7 @@ GameObject:
   - component: {fileID: 1090741224}
   - component: {fileID: 1090741223}
   - component: {fileID: 1090741222}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ButtonPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1924,7 +1938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1953,7 +1967,7 @@ GameObject:
   - component: {fileID: 1478078474}
   - component: {fileID: 1478078476}
   - component: {fileID: 1478078475}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ResumeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2033,7 +2047,7 @@ GameObject:
   - component: {fileID: 1637606504}
   - component: {fileID: 1637606503}
   - component: {fileID: 1637606502}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
