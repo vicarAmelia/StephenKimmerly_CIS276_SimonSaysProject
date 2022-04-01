@@ -594,6 +594,7 @@ RectTransform:
   - {fileID: 1699634384}
   - {fileID: 816186679}
   - {fileID: 489449154}
+  - {fileID: 633330191}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -920,6 +921,7 @@ GameObject:
   - component: {fileID: 489449155}
   - component: {fileID: 489449159}
   - component: {fileID: 489449158}
+  - component: {fileID: 489449160}
   m_Layer: 5
   m_Name: Button 3
   m_TagString: Untagged
@@ -1151,6 +1153,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &489449160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489449153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &576201542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,6 +1309,85 @@ MonoBehaviour:
   - {fileID: 1699634389}
   - {fileID: 816186684}
   - {fileID: 489449158}
+--- !u!1 &633330190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 633330191}
+  - component: {fileID: 633330193}
+  - component: {fileID: 633330192}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &633330191
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633330190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.6068, y: 2.6068, z: 2.6068}
+  m_Children: []
+  m_Father: {fileID: 102527068}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 625, y: 372}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &633330192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633330190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Round: 1'
+--- !u!222 &633330193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633330190}
+  m_CullTransparentMesh: 1
 --- !u!1 &670718254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1623,7 @@ GameObject:
   - component: {fileID: 816186680}
   - component: {fileID: 816186683}
   - component: {fileID: 816186684}
+  - component: {fileID: 816186685}
   m_Layer: 5
   m_Name: Button 2
   m_TagString: Untagged
@@ -1758,6 +1855,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedColor: {r: 0.077162705, g: 0.9622642, b: 0.9367876, a: 0}
   button: {fileID: 816186680}
+--- !u!114 &816186685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816186678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &882321059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,6 +2213,7 @@ GameObject:
   - component: {fileID: 1305541419}
   - component: {fileID: 1305541422}
   - component: {fileID: 1305541423}
+  - component: {fileID: 1305541424}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2332,6 +2445,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedColor: {r: 0.09438412, g: 0.2520353, b: 0.9528302, a: 0}
   button: {fileID: 1305541419}
+--- !u!114 &1305541424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305541417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1478078473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,6 +2667,7 @@ GameObject:
   - component: {fileID: 1699634385}
   - component: {fileID: 1699634388}
   - component: {fileID: 1699634389}
+  - component: {fileID: 1699634390}
   m_Layer: 5
   m_Name: Button 1
   m_TagString: Untagged
@@ -2770,3 +2899,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedColor: {r: 0.23433945, g: 0.9150943, b: 0.07338022, a: 0}
   button: {fileID: 1699634385}
+--- !u!114 &1699634390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699634383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
