@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class SimonSaysManager : MonoBehaviour
 {
-    public List<SimonSaysObject> allButtons;
-    private List<Button> simonButtonsPressed;
-    private List<Button> playerButtonsPressed;
+    public List<SimonSaysObject> allButtons = new List<SimonSaysObject>();
+    private List<Button> simonButtonsPressed = new List<Button>();
+    private List<Button> playerButtonsPressed = new List<Button>();
     private int numberOfPresses = 4;
+    private int buttonCheck = 0;
+    private bool passed = false;
 
 
     public void Start()
@@ -26,6 +28,8 @@ public class SimonSaysManager : MonoBehaviour
         //Find the canvas, and disable input to the canvas
         Canvas canvas = FindObjectOfType<Canvas>();
         canvas.GetComponent<GraphicRaycaster>().enabled = false;
+
+        //Diasable Buttons
         for (int i=0; i < allButtons.Count; i++)
         {
             allButtons[i].button.enabled = false;
@@ -48,4 +52,17 @@ public class SimonSaysManager : MonoBehaviour
         }
         canvas.GetComponent<GraphicRaycaster>().enabled = true;
     }
+
+    public void CheckButton()
+    {
+        if (buttonCheck = Random.Range = (0, 3))
+        {
+            passed = true;
+        }
+        else
+        {
+            passed = false;
+        }
+    }
+   
 }
