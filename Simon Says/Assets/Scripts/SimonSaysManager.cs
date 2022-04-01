@@ -52,17 +52,5 @@ public class SimonSaysManager : MonoBehaviour
         }
         canvas.GetComponent<GraphicRaycaster>().enabled = true;
     }
-
-    public void CheckButton()
-    {
-        if (buttonCheck = Random.Range = (0, 3))
-        {
-            passed = true;
-        }
-        else
-        {
-            passed = false;
-        }
-    }
    
 }
